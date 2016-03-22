@@ -1,0 +1,30 @@
+h1 {
+  color: white;
+}
+
+body {
+    background-image: url("http://i.myniceprofile.com/1505/150512.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.divRight{
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  background-color: grey;
+  color: green;
+  font-size: 50px;
+}
+
+.divWrong{
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  background-color: grey;
+  color: red;
+  font-size: 50px;
+}
+
+
