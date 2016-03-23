@@ -115,6 +115,7 @@ function hide() {
     $('.audioSmellsLike').hide(0)
     $('.audioRude').hide(0)
     $('.audioPartyRock').hide(0)
+    $('.audioStyle').hide(0)
 
     $('.divRight').hide(0)
     $('.divWrong').hide(0)
@@ -133,7 +134,7 @@ function randomStartBtn () {
         $('.quitPlayingGamesWithMyHeart').fadeIn(7000)
         $('.getDown').fadeIn(7000)
         $('.audioQuitPlaying').fadeIn(0)
-        var song1 = 'quitPlayingGamesWithMyHeart'
+        var song1 = document.getElementById("songQuitPlaying");
         currentSong = song1;
         // randomSong = $(this).attr('class')
         //var for button the user clicks on
@@ -254,8 +255,26 @@ function randomStartBtn () {
       currentSong = $(this).attr('class')
       console.log("Current song: " + currentSong);
       })
-    }
 
+      //set countdown timer in the start button function
+      var seconds = 22;
+      function secondPassed() {
+          var minutes = Math.round((seconds - 30)/60);
+          var remainingSeconds = seconds % 60;
+          if (remainingSeconds < 10) {
+              remainingSeconds = "0" + remainingSeconds;
+          }
+          document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
+          if (seconds == 0) {
+              clearInterval(countdownTimer);
+              alert("Time's Up!");
+          } else {
+              seconds--;
+          }
+      }
+      var countdownTimer = setInterval(secondPassed, 1000);
+
+}
 
 $('.startBtn').click(randomStartBtn);
 
@@ -503,7 +522,6 @@ function pauseSong(currentSong, randomSong) {
   }
 
 }
-
 
 
 //}

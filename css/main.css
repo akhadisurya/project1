@@ -9,6 +9,10 @@ body {
     position: absolute;
 }
 
+#countdown{
+  color: white;
+}
+
 .divRight{
   width: 200px;
   height: 200px;
