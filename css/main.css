@@ -7,6 +7,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 1;
 }
 
 #countdown{
@@ -14,21 +19,35 @@ body {
 }
 
 .divRight{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: 3px solid black;
-  background-color: grey;
-  color: green;
-  font-size: 50px;
+  background-image: url("https://media.riffsy.com/images/24805223bc5f729f16fe658893de5c54/raw");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 .divWrong{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border: 3px solid black;
-  background-color: grey;
-  color: red;
-  font-size: 50px;
+  background-image: url("https://media.giphy.com/media/vPN3zK9dNL236/giphy.gif");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 

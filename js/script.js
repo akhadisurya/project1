@@ -12,6 +12,12 @@ function secondPassed(){
 
 }
 
+var countdownTimer;
+
+function myStopFunction() {
+  clearTimeout(countdownTimer)
+}
+
 //to hide the options a,b,c,d
 $('.darkHorse').hide(0)
 $('.style').hide(0)
@@ -123,6 +129,7 @@ function hide() {
 
     $('.divRight').hide(0)
     $('.divWrong').hide(0)
+
     document.getElementById("startButton").disabled = false;
 }
 
@@ -276,7 +283,7 @@ function randomStartBtn () {
               seconds--;
           }
       }
-      var countdownTimer = setInterval(secondPassed, 1000);
+      countdownTimer = setInterval(secondPassed, 1000);
 }
 
 
@@ -288,230 +295,240 @@ $('.startBtn').click(randomStartBtn);
 //first set of the songs
 $('.theOne').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.iWantItThatWay').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.quitPlayingGamesWithMyHeart').click(function() {
 pauseSong(randomSong, currentSong);
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.getDown').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //second set of the songs
 $('.darkHorse').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.style').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
 $('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.hello').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.imNotTheOnlyOne').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //third set of the songs
 $('.getLow').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.sorry').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.hotlineBling').click(function() {
 pauseSong(randomSong, currentSong);
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.takeCare').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //fourth set of the songs
 $('.fiveHours').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.calling').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.cityOfDreams').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.heroes').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //fifth set of the songs
 $('.caDreaming').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.caCalling').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.caLoving').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.caLove').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 //sixth set of the songs
 $('.illStandByYou').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.pleaseDontGo').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.neverGonna').click(function() {
+pauseSong(randomSong, currentSong)
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.iWillAlways').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //seventh set of the songs
 $('.boyfriend').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.loveYourself').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.oneTime').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.oneLess').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //eight set of the songs
 $('.smellsLike').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.stairway').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.backInBlack').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.enter').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //ninth set of the songs
 $('.oneLove').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.mean').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.rude').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.alright').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 //tenth set of the songs
 $('.shake').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.partyRock').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 4000);
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
 });
 
 $('.partyHard').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 $('.shuffling').click(function() {
 $('.divWrong').toggle(1000)
-$('.divWrong').toggle(4000)
+$('.divWrong').toggle(5000)
 });
 
 function pauseSong(currentSong, randomSong) {
