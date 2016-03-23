@@ -8,6 +8,10 @@ function selectPlayer () {
     alert("It's your turn " + audience[getAudience])
   }
 
+function secondPassed(){
+
+}
+
 //to hide the options a,b,c,d
 $('.darkHorse').hide(0)
 $('.style').hide(0)
@@ -273,8 +277,8 @@ function randomStartBtn () {
           }
       }
       var countdownTimer = setInterval(secondPassed, 1000);
-
 }
+
 
 $('.startBtn').click(randomStartBtn);
 
@@ -408,7 +412,6 @@ $('.divWrong').toggle(4000)
 });
 
 $('.neverGonna').click(function() {
-pauseSong(randomSong, currentSong)
 $('.divRight').toggle(1000)
 $('.divRight').toggle(4000)
 setTimeout(function(){  hide() }, 4000);
@@ -525,5 +528,3 @@ function pauseSong(currentSong, randomSong) {
 
 
 //}
-
-
