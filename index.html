@@ -3,15 +3,15 @@
 <head>
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
-    <title>THE MUSIC GAME!</title>
+    <title>THE MUSICAL GAME!</title>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
-    <h1>THE MUSIC GAME!</h1>
+    <h1>THE MUSICAL GAME!</h1>
     <button onclick="selectPlayer()">Select Player</button>
     <br></br>
-    <button class="startBtn">Start</button>
+    <button class="startBtn" id="startButton">Play</button>
     <br></br>
 
 <div class="divRight">YES THATS RIGHT!!!!!</div>
@@ -19,25 +19,84 @@
 
 
 <button class="darkHorse">A: Dark Horse</button>
-<button id="song1" class="style">B: Style</button>
+<button class="style">B: Style</button>
 <button class="hello">C: Hello</button>
 <button class="imNotTheOnlyOne">D: I'm Not the Only One</button>
+<audio controls = "controls" id="songStyle" class = "audioStyle">
+<source src="style.mp3" type="audio/mp3">
+</audio>
 
 <button class="theOne">A: The One</button>
 <button class="iWantItThatWay">B: I Want It That Way</button>
 <button class="quitPlayingGamesWithMyHeart">C: Quit Playing Games With My Heart</button>
 <button class="getDown">D: Get Down</button>
+<audio controls = "controls" id="songQuitPlaying" class = "audioQuitPlaying">
+<source src="quit-playing-games.mp3" type="audio/mp3">
+</audio>
 
 <button class="getLow">A: Get Low</button>
 <button class="sorry">B: Sorry</button>
 <button class="hotlineBling">C: Hotline Bling</button>
 <button class="takeCare">D: Take Care</button>
+<audio controls = "controls" id="songHotlineBling" class="audioHotlineBling">
+<source src="hotline-bling.mp3" type="audio/mp3">
+</audio>
 
 <button class="fiveHours">A: Five Hours</button>
 <button class="calling">B: Calling</button>
 <button class="cityOfDreams">C: City of Dreams</button>
 <button class="heroes">D: Heroes</button>
+<audio controls = "controls" id="songFiveHours" class="audioFiveHours">
+<source src="five-hours.mp3" type="audio/mp3">
+</audio>
 
+<button class="caDreaming">A: California Dreaming</button>
+<button class="caCalling">B: California Calling</button>
+<button class="caLoving">C: California Loving</button>
+<button class="caLove">D: California Love</button>
+<audio controls = "controls" id="songCaLove" class="audioCaLove">
+<source src="california-love.mp3" type="audio/mp3">
+</audio>
+
+<button class="illStandByYou">A: I'll Stand By You</button>
+<button class="pleaseDontGo">B: Please Don't Go</button>
+<button class="neverGonna">C: Never Gonna Give You Up</button>
+<button class="iWillAlways">D: I will Always Love You</button>
+<audio controls = "controls" id="songNeverGonna" class="audioNeverGonna">
+<source src="never-gonna-give-you-up.mp3" type="audio/mp3">
+</audio>
+
+<button class="boyfriend">A: Boyfriend</button>
+<button class="loveYourself">B: Love Yourself</button>
+<button class="oneTime">C: One Time</button>
+<button class="oneLess">D: One Less Lonely Girl</button>
+<audio controls = "controls" id="songLoveYourself" class="audioLoveYourself">
+<source src="love-yourself.mp3" type="audio/mp3">
+</audio>
+
+<button class="smellsLike">A: Smells Like Teen Spirit</button>
+<button class="stairway">B: Stairway To Heaven</button>
+<button class="backInBlack">C: Back In Black</button>
+<button class="enter">D: Enter Sandman</button>
+<audio controls = "controls" id="songSmellsLike" class="audioSmellsLike">
+<source src="smells-like.mp3" type="audio/mp3">
+</audio>
+
+<button class="oneLove">A: One Love</button>
+<button class="mean">B: Mean</button>
+<button class="rude">C: Rude</button>
+<button class="alright">D: Alright</button>
+<audio controls = "controls" id="songRude" class="audioRude">
+<source src="rude.mp3" type="audio/mp3">
+</audio>
+
+<button class="shake">A: Shake It!</button>
+<button class="partyRock">B: Party Rock Anthem</button>
+<button class="partyHard">C: Party Hard Anthem</button>
+<button class="shuffling">D: Shuffling</button>
+<audio controls = "controls" id="songPartyRock" class="audioPartyRock">
+<source src="party-rock-anthem.mp3" type="audio/mp3">
+</audio>
 
 <script src="js/script.js"></script>
 </body>
