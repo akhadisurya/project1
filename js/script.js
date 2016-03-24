@@ -425,6 +425,7 @@ $('.divWrong').toggle(5000)
 
 $('.neverGonna').click(function() {
 pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
 $('.divRight').toggle(1000)
 $('.divRight').toggle(5000)
 setTimeout(function(){  hide() }, 5000);
