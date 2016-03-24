@@ -3,12 +3,12 @@
 <head>
     <link rel="stylesheet" href="css/main.css">
     <meta charset="UTF-8">
-    <title>THE MUSICAL GAME!</title>
+    <title>GUESS THE SONG!</title>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
 
-    <h1>THE MUSICAL GAME!</h1>
+    <h1>GUESS THE SONG!</h1>
     <button onclick="selectPlayer()" class="selectPlayer"><img src="http://orig09.deviantart.net/346b/f/2013/070/3/2/gif_by_nina_mizuki-d5xqor4.gif">Select Player</button>
     <br></br>
     <button class="startBtn" id="startButton"><img src="http://www.teamluco.co.za/image/data/logos/RadioPlayButton-50x50.gif"><span>Play </span></button>
@@ -108,44 +108,84 @@
 <source src="party-rock-anthem.mp3" type="audio/mp3">
 </audio>
 
-<button class="callMe">A: Hey I Just Met You</button>
-<button class="callMe">B: Call Me Please</button>
-<button class="callMe">C: Call Me Later</button>
-<button class="callMe">D: Call Me Maybe</button>
+<button class="callMe" id="heyIJust"><img src="http://www.universalmusicmagazine.com/wp-content/uploads/2012/03/CARLY-RAE-JEPSEN1-50x50.jpg">A: Hey I Just Met You</button>
+<button class="callMe" id="callMePlease"><img src="http://www.pauseandplay.com/wp-content/uploads/2015/03/carly-rae-jepsen-50x50.jpg">B: Call Me Please</button>
+<button class="callMe" id="callMeLater"><img src="http://img4.bdbphotos.com/images/50x50/2/3/23fgcqgj0u0e0jg.jpg?skj2io4l">C: Call Me Later</button>
+<button class="callMe" id="callMeMaybe"><img src="http://exploregram.com/wp-content/uploads/2015/08/CarlyRaeJepsen-rocked-the-Toyota-Concert-Stage-this-morning-on-TODAY.-CarlyRaeTODAY-TODAYShow-CallMe-50x50.jpg">D: Call Me Maybe</button>
 <audio controls = "controls" id="songCallMe" class="audioCallMe">
 <source src="call-me-maybe.mp3" type="audio/mp3">
 </audio>
 
-<button class="lights">A: Yellow Lights</button>
-<button class="lights">B: Green Lights</button>
-<button class="lights">C: Red Lights</button>
-<button class="lights">D: Stop Lights</button>
+<button class="lights" id="yellowLights"><img src="http://www.theworldisraw.com/wp/wp-content/uploads/2015/06/DJ-Equalizor-at-The-Church-Full-House-50x50.jpg">A: Yellow Lights</button>
+<button class="lights" id="greenLights"><img src="http://www.murrayhilltalent.com/wp-content/uploads/2013/06/DJ-vin-2-50x50.jpg">B: Green Lights</button>
+<button class="lights" id="redLights"><img src="http://www.mixoftheday.co.uk/wp-content/uploads/2013/09/mr-fix-dj-50x50.jpg">C: Red Lights</button>
+<button class="lights" id="stopLights"><img src="http://www.murrayhilltalent.com/wp-content/uploads/2011/04/bb-dj-group2-50x50.jpg">D: Stop Lights</button>
 <audio controls = "controls" id="songRedLights" class="audioRedLights">
 <source src="red-lights.mp3" type="audio/mp3">
 </audio>
 
-<button class="photograph">A: Photograph</button>
-<button class="photograph">B: Photography</button>
-<button class="photograph">C: Thinking Out Loud</button>
-<button class="photograph">D: Loving Can Hurt</button>
+<button class="photograph" id="photograph"><img src="http://exploregram.com/wp-content/uploads/2015/08/Happy-Birthday-Rupert-Grint-HarryPotter-RonWeasley-thathairtho-Photo-credit-Murray-Close-50x50.jpg">A: Photograph</button>
+<button class="photograph" id="photography"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKvwexcbwDUhsxF4kPYXc4gmwIhr1aZwdsXj8WvCI-5xK2KTi_">B: Photography</button>
+<button class="photograph" id="thinkOut"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqyymE_CqZhxSIhBaA_32vUgUPOiACfjlRjq-ahdMoznYHB1Yq">C: Thinking Out Loud</button>
+<button class="photograph" id="lovingCan"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqpuqU0AB6-1BxFaYzOYmwj4Ii9KzBd_4RMvg6KO7-ArLSKMzY">D: Loving Can Hurt</button>
 <audio controls = "controls" id="songPhotograph" class="audioPhotograph">
 <source src="photograph.mp3" type="audio/mp3">
 </audio>
 
-<button class="fun">A: We Are Fun</button>
-<button class="fun">B: We Are Young</button>
-<button class="fun">C: Let's Set The World On Fire</button>
-<button class="fun">D: Always Young</button>
+<button class="fun" id="weAreFun"><img src="http://orig10.deviantart.net/40ce/f/2014/115/c/1/nyan_cat__50x50___icon_gif__by_dinohuggles-d7fz4gl.gif">A: We Are Fun</button>
+<button class="fun" id="weAreYoung"><img src="http://orig10.deviantart.net/1f20/f/2013/274/3/4/nyan_cat_avatar_by_chickenzoo-d6os8mk.gif">B: We Are Young</button>
+<button class="fun" id="letsSet"><img src="http://orig08.deviantart.net/57cb/f/2012/015/4/6/licking_cat__by_firestarkozwolf-d4mgfst.gif">C: Let's Set The World On Fire</button>
+<button class="fun" id="alwaysYoung"><img src="http://orig10.deviantart.net/8b64/f/2013/332/0/1/cat_gif_by_copycatninjagirl-d6w0tq0.gif">D: Always Young</button>
 <audio controls = "controls" id="songWeAre" class="audioWeAre">
 <source src="we-are-young.mp3" type="audio/mp3">
 </audio>
 
-<button class="hotel">A: Welcome To the Jungle</button>
-<button class="hotel">B: Sweet Child O' Mine</button>
-<button class="hotel">C: Hotel Califonia</button>
-<button class="hotel">D: Californication</button>
+<button class="hotel" id="welcome"><img src="http://nonacoustica.com/wp-content/uploads/2015/02/blagdan-band-hard-place-live-50x50.jpg">A: Welcome To the Jungle</button>
+<button class="hotel" id="sweet"><img src="http://www.murrayhilltalent.com/wp-content/uploads/2012/02/haut-chili-band-main-50x50.jpg">B: Sweet Child O' Mine</button>
+<button class="hotel" id="hotelCalifornia"><img src="http://www.niagaracatholic.ca/wp-content/uploads/2015/04/Band_3778-50x50.jpg">C: Hotel Califonia</button>
+<button class="hotel" id="calif"><img src="http://www.niagaracatholic.ca/wp-content/uploads/2015/04/Band_3778-50x50.jpg">D: Californication</button>
 <audio controls = "controls" id="songHotelCa" class="audioHotelCa">
 <source src="hotel-ca.mp3" type="audio/mp3">
+</audio>
+
+<button class="she" id="sheWillBeGone"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeQer3_NVj_Oh0IpWrBc4NCzSal6mEnFhg27SKLgw8DXw9AyUddQ">A: She Will Be Gone</button>
+<button class="she" id="she"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwo1xxMDcDDxhPmfFqFSq_yNTR-6keftKw-7UIsUlay5AfXTIn">B: She</button>
+<button class="she" id="sheWillBeLovingAgain"><img src="http://img.getjar.mobi/icon-50x50/84/860752_thm.jpg">C: She Will Be Loving Again</button>
+<button class="she" id="sheWillBeLoved"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlMgS1izm5IcaiqHshwblLzbSKWg1IU83HHUo3l9c4l2_q-LUB">D: She Will Be Loved</button>
+<audio controls = "controls" id="songSheWill" class="audioSheWill">
+<source src="she-will-be-loved.mp3" type="audio/mp3">
+</audio>
+
+<button class="irre" id="irrep"><img src="http://www.dennis-jansen.com/blog/wp-content/uploads/2013/12/beyonce-pretty-hurts-music-video-mister-scandal-50x50.gif">A: Irreplacable</button>
+<button class="irre" id="toThe"><img src="http://www.surroundsoundmusic.com/wp-content/uploads/Beyonce-Grammy-Award-2015-50x50.jpg">B: To the Left</button>
+<button class="irre" id="werk"><img src="http://www.celebspavilion.com/wp-content/uploads/2013/12/Beyonce-50x50.jpg">C: Werk Werk Werk</button>
+<button class="irre" id="ifIWere"><img src="http://babylonfm.net/wp-content/uploads/2014/11/Beyonce-2-598x340-50x50.jpg">D: If I Were a Boy</button>
+<audio controls = "controls" id="songIrre" class="audioIrre">
+<source src="beyonce.mp3" type="audio/mp3">
+</audio>
+
+<button class="paradise" id="aSky"><img src="https://a4-images.myspacecdn.com/images03/34/d5f8f40313614cb288c9e3bcddba38f8/50x50.jpg">A: A Sky Full of Stars</button>
+<button class="paradise" id="inMy"><img src="http://www.teamworld.it/wp-content/uploads/2016/03/Michele-Bravi-Gemeliers-50x50.jpg">B: In My Place</button>
+<button class="paradise" id="thePianist"><img src="http://www.buenamusica.com/media/fotos/cantantes/50x50/coldplay.jpg">C: The Pianist</button>
+<button class="paradise" id="paradise"><img src="http://www.teamworld.it/wp-content/uploads/2012/09/Made-In-The-AM-Onedirection-50x50.jpg">D: Paradise</button>
+<audio controls = "controls" id="songPara" class="audioPara">
+<source src="paradise.mp3" type="audio/mp3">
+</audio>
+
+<button class="daft" id="getLucky"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU9AkOV8Fx7C4Epg_hoMMcVBQwn88lt13kojAQs58QB8zdL9xn">A: Get Lucky</button>
+<button class="daft" id="punk"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfWHVZXPmhnZ0zVMjrrQLolF5ipFWpxQm72fYhzL7n2GAWtBvP">B: Punk</button>
+<button class="daft" id="faster"><img src="http://babylonfm.net/wp-content/uploads/2014/01/daft-punk-nile-50x50.png">C: Faster, Better, Stronger</button>
+<button class="daft" id="upAll"><img src="http://exploregram.com/wp-content/uploads/2015/09/Friday-fun-with-MCAStage-staff-courtesy-of-MCAStore-daftpunk-50x50.jpg">D: We're Up All Nights</button>
+<audio controls = "controls" id="songGet" class="audioGet">
+<source src="daft-punk.mp3" type="audio/mp3">
+</audio>
+
+<button class="what" id="whatMakes"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaA7u3VG2EkmfvlMJaq2IljmkNntQj2fZ-PrujWWqVIuYgYmOI">A: What Makes You Beautiful</button>
+<button class="what" id="what"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfgGNIYYR1dR4F-igHyC13PxvEXZK8Fv6q9q0aT59s7izA0IWYFg">B: What Makes You Pretty</button>
+<button class="what" id="weAre"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwpvIZQ3zyTp7xIeew-J49eH5WTfoStYt_GAyGtHZcHndVXWYshw">C: We Are Beautiful</button>
+<button class="what" id="you"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuUhwOuRF1MRPqx3OhlcImTH6TAv9z1Vg7yXnzu2lINeZHBc-PKw">D: You're Insecure</button>
+<audio controls = "controls" id="songWhat" class="audioWhat">
+<source src="what-makes.mp3" type="audio/mp3">
 </audio>
 
 <script src="js/script.js"></script>
