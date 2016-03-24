@@ -73,7 +73,8 @@ $('.audioPartyRock').hide(0)
 
 $('.divRight').hide(0)
 $('.divWrong').hide(0)
-
+$('#applause').hide(0)
+$('#boo').hide(0)
 
 function hide() {
     $('.darkHorse').hide(0)
@@ -289,249 +290,8 @@ function randomStartBtn () {
 
 $('.startBtn').click(randomStartBtn);
 
-//function rightOrWrong () {
 
-
-//first set of the songs
-$('.theOne').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.iWantItThatWay').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.quitPlayingGamesWithMyHeart').click(function() {
-pauseSong(randomSong, currentSong);
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.getDown').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//second set of the songs
-$('.darkHorse').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.style').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(4000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.hello').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.imNotTheOnlyOne').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//third set of the songs
-$('.getLow').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.sorry').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.hotlineBling').click(function() {
-pauseSong(randomSong, currentSong);
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.takeCare').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//fourth set of the songs
-$('.fiveHours').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.calling').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.cityOfDreams').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.heroes').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//fifth set of the songs
-$('.caDreaming').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.caCalling').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.caLoving').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.caLove').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-//sixth set of the songs
-$('.illStandByYou').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.pleaseDontGo').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.neverGonna').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.iWillAlways').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//seventh set of the songs
-$('.boyfriend').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.loveYourself').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.oneTime').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.oneLess').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//eight set of the songs
-$('.smellsLike').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.stairway').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.backInBlack').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.enter').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//ninth set of the songs
-$('.oneLove').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.mean').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.rude').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.alright').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-//tenth set of the songs
-$('.shake').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.partyRock').click(function() {
-pauseSong(randomSong, currentSong)
-myStopFunction(countdownTimer);
-$('.divRight').toggle(1000)
-$('.divRight').toggle(5000)
-setTimeout(function(){  hide() }, 5000);
-});
-
-$('.partyHard').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
-$('.shuffling').click(function() {
-$('.divWrong').toggle(1000)
-$('.divWrong').toggle(5000)
-});
-
+// function to pause the song
 function pauseSong(currentSong, randomSong) {
   console.log("in the pause song fn");
   if (currentSong == randomSong){
@@ -542,6 +302,372 @@ function pauseSong(currentSong, randomSong) {
   }
 
 }
+
+
+
+//function rightOrWrong () {
+
+
+//first set of the songs
+$('.theOne').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.iWantItThatWay').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.quitPlayingGamesWithMyHeart').click(function() {
+pauseSong(randomSong, currentSong);
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.getDown').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//second set of the songs
+$('.darkHorse').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.style').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(4000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.hello').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.imNotTheOnlyOne').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//third set of the songs
+$('.getLow').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.sorry').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.hotlineBling').click(function() {
+pauseSong(randomSong, currentSong);
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.takeCare').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//fourth set of the songs
+$('.fiveHours').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.calling').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.cityOfDreams').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.heroes').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//fifth set of the songs
+$('.caDreaming').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.caCalling').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.caLoving').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.caLove').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+//sixth set of the songs
+$('.illStandByYou').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.pleaseDontGo').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.neverGonna').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.iWillAlways').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//seventh set of the songs
+$('.boyfriend').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.loveYourself').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.oneTime').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.oneLess').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//eight set of the songs
+$('.smellsLike').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.stairway').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.backInBlack').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.enter').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//ninth set of the songs
+$('.oneLove').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.mean').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.rude').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.alright').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+//tenth set of the songs
+$('.shake').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.partyRock').click(function() {
+pauseSong(randomSong, currentSong)
+myStopFunction(countdownTimer);
+var applause = document.getElementById("applause")
+applause.autoplay = true;
+applause.load();
+$('.divRight').toggle(1000)
+$('.divRight').toggle(5000)
+setTimeout(function(){  hide() }, 5000);
+});
+
+$('.partyHard').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
+$('.shuffling').click(function() {
+$('.divWrong').toggle(1000)
+$('.divWrong').toggle(5000)
+var boo = document.getElementById("boo")
+boo.autoplay = true;
+boo.load();
+});
+
 
 
 //}
