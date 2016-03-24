@@ -388,6 +388,7 @@ function randomStartBtn () {
       console.log("Current song: " + currentSong);
       })
 
+
       //set countdown timer function
       var seconds = 22;
       function secondPassed() {
@@ -399,7 +400,7 @@ function randomStartBtn () {
           document.getElementById('countdown').innerHTML = minutes + ":" + remainingSeconds;
           if (seconds == 0) {
               clearInterval(countdownTimer);
-              alert("Time's Up!");
+              alert("Time's Up! You Lose!");
           } else {
               seconds--;
           }
