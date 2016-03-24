@@ -535,11 +535,10 @@ $('.divWrong').toggle(5000)
 function pauseSong(currentSong, randomSong) {
   console.log("in the pause song fn");
   if (currentSong == randomSong){
-    var a = document.getElementsByTagName('audio');
-    for (var i = 0; i < a.length; i++){
-      a[i].pause();
+    var toPauseSong = document.getElementsByTagName('audio');
+    for (var i = 0; i < toPauseSong.length; i++){
+      toPauseSong[i].pause();
     }
-    console.log("haha")
   }
 
 }
