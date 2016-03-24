@@ -3,13 +3,13 @@ var audience = ["Carlos. A", "Jobeth", "Carlos.B", "Brigette",
                         "Victor", "Andrew", "Jonathan", "Timmy",
                         "Noah", "Marcos", "Joseph"]
 
+//randomly select a player
 function selectPlayer () {
     var getAudience = Math.floor(Math.random()*16)
     alert("It's your turn " + audience[getAudience])
   }
 
 function secondPassed(){
-
 }
 
 var countdownTimer;
@@ -69,6 +69,16 @@ $('.audioLoveYourself').hide(0)
 $('.audioSmellsLike').hide(0)
 $('.audioRude').hide(0)
 $('.audioPartyRock').hide(0)
+$('.audioCallMe').hide(0)
+$('.audioRedLights').hide(0)
+$('.audioPhotograph').hide(0)
+$('.audioWeAre').hide(0)
+$('.audioHotelCa').hide(0)
+$('.callMe').hide(0)
+$('.lights').hide(0)
+$('.photograph').hide(0)
+$('.fun').hide(0)
+$('.hotel').hide(0)
 
 
 $('.divRight').hide(0)
